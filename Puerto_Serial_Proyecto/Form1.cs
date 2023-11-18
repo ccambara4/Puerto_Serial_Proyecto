@@ -125,7 +125,7 @@ namespace Puerto_Serial_Proyecto
             }
         }
 
-        private void DatoRecibido(object sender, SerialDataReceivedEventArgs e)//Recibi los datos del puerto al que se envío el mensaje
+        private void DatoRecibido(object sender, SerialDataReceivedEventArgs e)//Recibi los datos del puerto al que se enviaron los datos
         {
             AccesoInterrupcion(SpPuertos.ReadExisting());
         }
