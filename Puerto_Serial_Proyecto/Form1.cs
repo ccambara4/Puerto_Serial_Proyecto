@@ -125,7 +125,7 @@ namespace Puerto_Serial_Proyecto
             }
         }
 
-        private void DatoRecibido(object sender, SerialDataReceivedEventArgs e)//Recibi los datos del puerto al que se enviaron los datos
+        private void DatoRecibido(object sender, SerialDataReceivedEventArgs e)//Recibir los datos del puerto al que se enviaron los datos
         {
             AccesoInterrupcion(SpPuertos.ReadExisting());
         }
@@ -134,5 +134,37 @@ namespace Puerto_Serial_Proyecto
         {
             Close();
         }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SpPuertos.DiscardOutBuffer();
+                strbufferOut = "L2&";
+                SpPuertos.Write(strbufferOut);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message.ToString());
+            }
+        }
+
+        private void btnEncender_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SpPuertos.DiscardOutBuffer();
+                strbufferOut = "L1&";
+                SpPuertos.Write(strbufferOut);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message.ToString());
+            }
+        }
+
+        
+
+        
     }
 }

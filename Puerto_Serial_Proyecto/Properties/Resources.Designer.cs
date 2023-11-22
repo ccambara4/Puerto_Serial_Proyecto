@@ -73,6 +73,16 @@ namespace Puerto_Serial_Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap light_bulb_1f4a1 {
+            get {
+                object obj = ResourceManager.GetObject("light-bulb_1f4a1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red04 {
             get {
                 object obj = ResourceManager.GetObject("red04", resourceCulture);
