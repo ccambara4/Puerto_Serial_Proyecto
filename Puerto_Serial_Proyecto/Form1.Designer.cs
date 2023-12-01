@@ -216,7 +216,7 @@ namespace Puerto_Serial_Proyecto
             // 
             // TxtDatosRecibidos
             // 
-            this.TxtDatosRecibidos.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.TxtDatosRecibidos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
